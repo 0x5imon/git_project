@@ -1,5 +1,6 @@
-from functools import cache
+from functools import cache, lru_cache
 
+@cache
 def fib(n):
     if n<=1:
         return n
